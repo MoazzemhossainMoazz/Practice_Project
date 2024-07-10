@@ -1,0 +1,80 @@
+*{
+	margin:0px;
+	
+}
+.box{
+	width:25%;
+	height:200px;
+	float:left;
+	overflow:hidden;
+}
+.hidden_area{
+	overflow:hidden;
+}
+.logo{
+	background:gray;
+	height:200px;
+	width:20%;
+	float:left;
+}
+.menu{
+	background:skyblue;
+	height:200px;
+	width:80%;
+	overflow:hidden;
+}
+.banner{
+	background:yellowgreen;
+	height:200px;
+	width:100%;
+}
+.box1{
+	background:green;
+}
+.box2{
+	background:red;
+}
+.box3{
+	background:blue;
+}
+.box4{
+	background:yellow;
+}
+
+.new_box1{
+	background:yellowgreen;
+	height:200px;
+	width:200px;
+	margin:100px auto;
+	
+	/*border-width:5px;
+	border-style:solid;
+	border-color:red;*/
+	
+	border:5px solid red;
+	outline:20px solid skyblue;
+	border-radius:10px;
+}
+
+.new_box2{
+	background:yellowgreen;
+	height:200px;
+	width:200px;
+	margin:100px auto;
+	
+	border-left:5px solid red;
+	/*border-radius:10px 0 5px 20px; */
+	border-top-right-radius:50px;
+}
+
+.new_box3{
+	background:yellowgreen;
+	height:200px;
+	width:200px;
+	margin:100px auto;
+	
+	border-width:5px;
+	border-style:dotted inset solid inset;
+	border-color:red green blue black;
+		
+}
