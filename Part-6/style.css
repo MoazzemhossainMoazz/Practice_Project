@@ -1,0 +1,106 @@
+body{
+	margin:0;
+	background:red url('images/img1.jpg') no-repeat fixed center center / cover;
+	
+}
+
+.box{
+	margin:auto;
+	width: 1000px;
+	height: 700px;
+	border:25px solid red;
+	padding:25px;
+	
+	
+	
+	background-repeat:repeat;
+	background-position:center center;
+}
+
+p{
+	color:white;
+}
+
+/*
+/*menu left
+.menu{
+	background:yellow;
+	overflow:hidden;
+}
+.menu ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.menu ul li{
+	float:left;
+}
+.menu ul li a{
+	color: red;
+	padding:10px 20px;
+	display: inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size: 17px;
+}
+
+.menu ul li:hover a{
+	background:skyblue;
+	color:black;
+}
+
+/*Menu-right
+.menu-right{
+	background:yellow;
+	overflow:hidden;
+}
+.menu-right ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float: right;
+}
+.menu-right ul li{
+	float:left;
+}
+.menu-right ul li a{
+	color: red;
+	padding:10px 20px;
+	display: inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size: 17px;
+}
+
+.menu-right ul li:hover a{
+	background:skyblue;
+	color:black;
+}
+
+/*Menu center
+.menu-center{
+	background:yellow;
+	overflow:hidden;
+}
+.menu-center ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float: center;
+}
+.menu-center ul li{
+	float:left;
+}
+.menu-center ul li a{
+	color: red;
+	padding:10px 20px;
+	display: inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size: 17px;
+}
+
+.menu-center ul li:hover a{
+	background:skyblue;
+	color:black;
+}*/
