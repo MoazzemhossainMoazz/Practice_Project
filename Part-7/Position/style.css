@@ -1,0 +1,30 @@
+body, p{
+	margin:0;
+}
+p{
+	margin-bottom:20px;
+	
+}
+
+.box{
+	height:100px;
+	width: 100px;
+	background-color:red;
+	
+	position:fixed;
+	bottom:100px;
+	right:100px;
+	margin:auto;
+}
+
+.pera{
+	background:yellowgreen;
+	position:sticky;
+	top:0;
+	
+}
+.pera_bottom{
+	background:yellow;
+	position:sticky;
+	bottom:0;
+}
