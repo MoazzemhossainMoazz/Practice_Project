@@ -1,0 +1,53 @@
+.parent{
+	height:300px;
+	width:300px;
+	background:red;
+	margin:auto;
+	position:relative; /*when we don't given the position:relative, the child box out side from parent box*/
+}
+.child{
+	height:50%;
+	width:100px;
+	background:green;
+	position:absolute; /*when we don't given position:absolute, the child not work like-right,left,top,bottom*/
+	right:0px;
+	z-index:1;
+}
+.child1{
+	height:50%;
+	width:120px;
+	background:yellowgreen;
+	position:absolute; /*when we don't given position:absolute, the child not work like-right,left,top,bottom*/
+	left:0px;
+	
+}
+.child2{
+	height:50%;
+	width:100px;
+	background:blue;
+	position:absolute; /*when we don't given position:absolute, the child not work like-right,left,top,bottom*/
+	bottom:right;
+	
+}
+.child3{
+	height:50%;
+	width:100px;
+	background:yellow;
+	position:absolute; /*when we don't given position:absolute, the child not work like-right,left,top,bottom*/
+	bottom:0px;
+}
+.parent:hover{
+	background:tomato
+}
+.parent:hover .child{
+	left:0;
+}
+.parent:hover .child2{
+	right:0;
+}
+.parent:hover .child3{
+	bottom:0;
+}
+.parent:hover .child4{
+	top:0;
+}
