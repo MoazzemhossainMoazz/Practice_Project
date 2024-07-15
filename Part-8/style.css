@@ -1,0 +1,161 @@
+body{
+	margin:0;
+}
+.header_area{
+	background:#3498db;
+	display:flex; 
+	justify-content:space-between;
+	padding:8px 0;
+}
+
+.logo{
+	 margin-left: 10px;
+}
+
+/* .social_icons{
+	width:70%;
+	overflow:hidden;
+	
+} */
+ul {
+	margin:0;
+	padding:0;
+  list-style-type: none;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: arial;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.social_icons ul{
+	float:right;
+	color-icon:
+}
+.social_icons ul li{
+	float:left;
+}
+.social_icons ul li a{
+	text-align: center;
+}
+.social_icons ul li a i {
+    color: #3498db;
+    display: inline-block;
+    /* padding: 10px 10px; */
+    margin-right: 15px;
+    background: white;
+    width: 39px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid white;
+    box-shadow: 0 0 7px white;
+    transition: 0s;
+}
+
+.social_icons ul li a i:hover{
+	background:#3498db;
+	color:white;
+}
+
+
+
+/*Menu Bar*/
+
+.menu{
+	text-align:center;
+	background:#8e44ad;
+}
+.menu ul{}
+.menu ul li{
+	display:inline;
+}
+.menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-family: arial;
+    color: white;
+    text-transform: uppercase;
+	
+}
+
+.menu ul li a:hover{
+	background:#95a5a6;
+	}
+
+.banner img{
+	width:100%;
+	display: block;
+}
+
+.services{
+	overflow:hidden;
+	margin:20px;
+}
+.service {
+    width: 29%;
+    float: left;
+    overflow: hidden;
+    
+    margin: 2%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+	box-shadow: 0 0 15px gray;
+	border-radius:5px;
+}
+
+.service-content h2 {
+    /* width: 100px; */
+    /* height: 100px; */
+    margin: 10px 0;
+    font-weight: normal;
+    font-family: tahoma;
+}
+.service-content p {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: tahoma;
+    text-align: left;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    background: white;
+    margin: auto;
+    border-radius: 50%;
+	border:0px solid #34495e;
+	box-shadow:0 0 10px gray;
+	transition:1s;
+}
+
+.icon:hover{
+	background:#34495e;
+	color:white;
+}
+.icon:hover i{
+	color:white;
+}
+
+.icon i {
+    font-size: 50px;
+    color: #34495e;
+    line-height: 91px;	
+}
+
+.footer{
+	background:red;
+	text-align:center;
+	padding:5px 0;
+	font-size:20px 0;
+}
+
+
+
