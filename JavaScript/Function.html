@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+
+    <p id="smp1"></p>
+    <script>
+        
+        function addTwoNumbers(x,y){
+            return x+y;
+        }
+        document.getElementById("smp1").innerHTML=addTwoNumbers(4,5);
+    </script>
+
+    <p id="smp2"></p>
+    <script>
+        function greetThePlanet(){
+            return "Hellow World";
+        }
+        document.getElementById("smp2").innerHTML=greetThePlanet();
+    </script>
+
+    <p id="smp3"></p>
+    <script>
+        function square(number){
+            return number*number;
+        }
+        document.getElementById("smp3").innerHTML=square(5);
+
+    </script>
+</body>
+</html>
