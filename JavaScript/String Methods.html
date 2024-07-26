@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Find exact position values</h2>
+
+    <p id="msg1"></p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <p id="msg2"></p>
+
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    
+
+
+    <script>
+        document.getElementById("msg1").innerHTML="###Slice Method()###";
+
+
+
+        let str = "Apple, Banana, Pineapple";
+        document.getElementById("demo").innerHTML="demo ="+ " " + str.slice(7,15);
+        document.getElementById("demo1").innerHTML="demo1 ="+ " " + str.slice(8,18);
+        document.getElementById("demo2").innerHTML="demo2 ="+ " " + str.slice(3,17);
+        document.getElementById("demo3").innerHTML="demo3 ="+ " " + str.slice(7);
+        document.getElementById("demo4").innerHTML="demo4 ="+ " " + str.slice(-5,-14); //this statement is not correct
+        document.getElementById("demo5").innerHTML="demo5 ="+ " " + str.slice(-12,-6);
+        document.getElementById("demo6").innerHTML="demo6 ="+ " " + str.slice(-7);
+        
+
+
+        document.getElementById("msg2").innerHTML="###Substring Method()###";
+
+
+
+        document.getElementById("demo7").innerHTML="demo7 ="+ " " + str.substring(7,15);
+        document.getElementById("demo8").innerHTML="demo8 ="+ " " + str.substring(8,18);
+        document.getElementById("demo9").innerHTML="demo9 ="+ " " + str.substring(3,17);
+        document.getElementById("demo10").innerHTML="demo10 ="+ " " + str.substring(7);
+        document.getElementById("demo11").innerHTML="demo11 ="+ " " + str.substring(-5,-14); //this statement is not correct
+        document.getElementById("demo12").innerHTML="demo12 ="+ " " + str.substring(-12,-6);
+        document.getElementById("demo13").innerHTML="demo13 ="+ " " + str.substring(-7);
+    </script>
+    
+    <hr>
+    <p>Repalace "Microsoft" to "W3schools using function</p>
+
+    <button onclick="myFunction()">Clcik here</button>
+    <p id="dmeo14">Please visit Microsoft</p>
+    <script>
+        function myFunction(){
+            let text = document.getElementById("demo14").innerHTML;
+            document.getElementById("demo14").innerHTML=text.replace("Microsoft", "W3schools");
+        }
+    </script>
+
+    <hr>
+    <br>
+    <h2>Here I string use from JavaScript.com site</h2>
+
+    <p id="smp1"></p>
+    <p id="smp2"></p>
+    <p id="smp3"></p>
+    <p id="smp4"></p>
+    <p id="smp5"></p>
+    <p id="smp6"></p>
+    <p id="smp7"></p>
+    <p id="smp8"></p>
+
+    <script>
+        document.getElementById("smp1").innerHTML="It's six o'clock.";
+        document.getElementById("smp2").innerHTML='Realy you are a "great" student';
+        document.getElementById("smp3").innerHTML= 'It\'s six 0\' clock';
+        document.getElementById("smp4").innerHTML="Yor are a \"great\" student";
+        document.getElementById("smp5").innerHTML="caterpillar".length;
+        document.getElementById("smp6").innerHTML="THE KIDS".toLowerCase();
+        document.getElementById("smp7").innerHTML="the kids".toUpperCase();
+        document.getElementById("smp8").innerHTML=" Keep the middle space ".trim();
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>String</h2>
+
+    <h3>Find length from a string value</h3>
+
+    <p id="demo"></p>
+    <script>
+        let text="The name of our country is Bangladesh";
+        document.getElementById("demo").innerHTML=text.length;
+    </script>
+
+    <hr>
+    <h3>Show double quote</h3>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        let text1="The name of our country is \"Bangladesh\" ";
+        let text2 = 'It\'s alright'
+        document.getElementById("demo1").innerHTML=text1;
+        document.getElementById("demo2").innerHTML=text2;
+    </script>
+
+    <hr>
+    <h2>Difference between (==) and (===)</h2>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        let x= "John";
+        let y= new String("John");
+        document.getElementById("demo3").innerHTML= (x==y);
+
+        let a = "John";
+        let b = new String("John");
+        document.getElementById("demo4").innerHTML= (x===y);
+    </script>
+    <hr>
+    
+    <h2>Find type of string value</h2>
+
+    <p id="demo5"></p>
+    <script>
+        let x1 = "John";
+        let x2 = new String("John");
+        document.getElementById("demo5").innerHTML= typeof x1 +"<br>"+ typeof x2;
+    </script>
+
+    <hr>
+    <h2>Compare with 2 object</h2>
+
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        let a1 = new String("John"); //a1 is an object
+        let a2 = new String("John"); //a2 is an object
+
+        document.getElementById("demo6").innerHTML= (a1==a2);
+        document.getElementById("demo7").innerHTML=(a1===a2);
+    </script>
+    <p></p>
+</body>
+</html>

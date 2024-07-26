@@ -1,0 +1,33 @@
+h2,p{
+	margin:0;
+}
+
+.container{
+	width:80%;
+	border:2px solid black;
+	margin:auto;
+	display:flex;
+	flex-wrap:wrap;
+	height:400px;
+	background:skyblue;
+}
+
+.item{
+	border:2px solid red;
+	background:green;
+	padding:5px;
+	margin: 5px;
+	color:white;
+	height:200px;
+	flex:1 0 30%;
+	box-sizing:border-box;
+}
+
+.class-1{
+	order:-2;
+	align-self:center;
+}
+.class-2{
+	order:-1;
+	align-self:end;
+}

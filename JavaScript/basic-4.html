@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Object</h2>
+
+    <p id="demo1"></p>
+    <script>
+        const car= {type:"Fiat", color:"blue", model:"t300"};
+
+        document.getElementById("demo1").innerHTML=car.model;
+    </script>
+
+    <hr>
+    <p id="demo3"></p>
+    <script>
+        const person = {name:"John", age:"35", height:"5ft"};
+
+        document.getElementById("demo3").innerHTML = person.name +" is "+ person.age +" years old and his height is " + person.height;
+    </script>
+
+    <hr>
+    <p id="demo4"></p>
+    <script>
+        const Person = {
+            firstName:"John",
+            lastName:"Doe",
+            age: 40
+        };
+
+        document.getElementById("demo4").innerHTML=Person["firstName"] + " " + Person["lastName"] +" is " + Person["age"] +" years old";
+    </script>
+
+    <hr>
+    <h2>Show name using function</h2>
+    <p id="demo5"></p>
+
+    <script>
+        const man={
+            firstName: "John",
+            lastName : "Doe",
+            age : 45,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("demo5").innerHTML = man.fullName();
+    </script>
+
+    <hr>
+    <h2>Events</h2>
+    <h3>Show time under button</h3>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <p id="demo"></p>
+
+    <h3>Show time in button</h3>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+    <hr>
+
+    <h2>show date using function</h2>
+    <button onclick="displayDate()">The time is</button>
+
+    <p id="demo7"></p>
+    <script>
+        function displayDate(){
+            document.getElementById("demo7").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>

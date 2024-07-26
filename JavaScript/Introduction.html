@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="demo">This is a line</P>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='hello javascript'">click here</button>
+
+    <p id="demo2">This another line</p>
+    <button type="button" onclick='document.getElementById("demo2").innerHTML="hi javascript"'>click me</button>
+
+    <hr>
+    <h2>If your want to turn on/off bulb with buttons, click "On" for Light On and click "Off" for light Off</h2>
+    
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">On</button>
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">off</button>
+
+    <hr>
+    <h2>If your want to change text size with button click on a button</h2>
+    <p id="text-size"><mark>Text</mark></p>
+    <button onclick="document.getElementById('text-size').style.fontSize='15px'">15px</button>
+    <button onclick="document.getElementById('text-size').style.fontSize='25px'">25px</button>
+    <button onclick="document.getElementById('text-size').style.fontSize='35px'">35px</button>
+    <button onclick="document.getElementById('text-size').style.fontSize='45px'">45px</button>
+
+    <hr>
+    <h2>Hide Element</h2>
+    <p id="hide">JavaScript can hide html element</p>
+    <button onclick="document.getElementById('hide').style.display='none'">Hide</button>
+
+
+
+    <hr>
+    <h2>Show Hidden Element, click on the button</h2>
+    <p id="show" style="display:none"><mark>hello, I was hidden</mark></p>
+    <button onclick="document.getElementById('show').style.display='block'">Show</button>
+
+
+    
+    <hr>
+    <h2>Show and Hide element with buttons</h2>
+    <p id="hide-show"><mark>Hi, now I'm showing</mark></p>
+    
+    <button onclick="document.getElementById('hide-show').style.display='none'">Hide</button>
+    <button onclick="document.getElementById('hide-show').style.display='block'">Show</button>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Declaring a constant array does NOT make the element unchangeble</p>
+
+    <p id="show_data"></p>
+<script>
+    const cars = ["BMW", "toyota", "tata", "ferari"];
+
+    cars[1] = "ford";
+    cars.push("honda");
+    cars.push("audi");
+
+    document.getElementById("show_data").innerHTML=cars;
+</script>
+<hr>
+
+<P>Declaring a constant object does NOT make the objects properties unchangeable:</P>
+
+<p id="obj"></p>
+
+<script>
+    const car = {model:"t100", color:"blue", condition:"new"};
+    car.color = "green";
+    car.type = "Hybrid";
+
+    document.getElementById("obj").innerHTML = "the car color is " + car.color;
+</script>
+
+<hr>
+
+<h2>Show data type</h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    let x = 16 + 4 + "volvo";
+    let y = "volvo" + 16 + 4;
+
+    document.getElementById("demo1").innerHTML=x;
+    document.getElementById("demo2").innerHTML=y;
+</script> 
+
+
+
+</body>
+</html>

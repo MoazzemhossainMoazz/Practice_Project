@@ -1,0 +1,29 @@
+*{
+	margin:0;
+}
+
+.box_area{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.item-1{
+	overflow:hidden;
+	background:yellow;
+	border:1px solid black;
+	box-shadow:0 0 10px gray;
+	padding:25px;
+	box-sizing:border-box;
+	margin-bottom:30px;
+	display:flex;
+	align-items:center;
+	flex:0 0 30%;
+	
+}
+
+.item-1 i{
+	font-size:50px;
+	color:skyblue;
+	margin-right:12px;
+}

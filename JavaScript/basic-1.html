@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS statement</h2>
+    <h3>Sum of 2 numbers</h3>
+
+    <p id="sum"></p>
+
+    <script>
+        let x, y, z;
+        x=5;
+        y=10;
+        z=x+y;
+        document.getElementById("sum").innerHTML="The value is " + z + ".";
+    </script>
+
+    <hr>
+    <h2>Show a messege</h2>
+    <p id="msg"></p>
+
+    <script>
+        document.getElementById("msg").innerHTML="This is a messege";
+    </script>
+
+    <hr>
+    <h2>Show a messege from button</h2>
+
+    <button onclick="myFunction()">Click Here</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction(){
+            document.getElementById("demo1").innerHTML = "Hello";
+            document.getElementById("demo2").innerHTML="Hi";
+        }
+    </script>
+
+    <hr>
+
+    <h2>Show a value</h2>
+
+    <p id="num"></p>
+
+    <script>
+        document.getElementById("num").innerHTML = "The value is " + 10.5 +"";
+    </script>
+
+    <hr>
+    
+    <h2>Show string value</h2>
+    <p id="strval"></p>
+
+    <script>
+        let firstName, lastName;
+        firstName = "Moazzem";
+        lastName = "Hossain";
+        document.getElementById("strval").innerHTML = "The first name is: " +firstName+"";
+    </script>
+
+    <hr>
+
+    <p id="demo"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+
+<hr>
+<h2>Use try catch</h2>
+<p id="check_err"></p>
+
+<script>
+    try{
+        const PI = 3.141592653589793;
+        PI= 3.1416;
+    }
+    catch(err){
+        document.getElementById("check_err").innerHTML = err;
+    }
+</script>
+
+</body>
+</html>

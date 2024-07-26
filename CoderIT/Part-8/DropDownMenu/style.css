@@ -1,0 +1,65 @@
+body{
+	margin:0;
+}
+
+.header{
+	
+}
+.menu{
+	background:tomato;
+}
+.menu:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+}
+.menu ul li{
+	float:left;
+	position:relative;
+		
+}
+.menu ul li a{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:white;
+	display:inline-block;
+	padding:10px 20px;
+	
+}
+.menu ul li:hover > a{
+	background:green;
+}
+
+.menu ul ul{
+	background:green;
+	width:300px;
+	display:none;
+	position:absolute;
+	left:0;
+	transition:.5s;
+	visibility:hidden;
+	opacity:0;
+	top:100px;
+	
+}
+.menu ul ul li{
+	float:none;
+	
+}
+
+.menu ul li:hover ul{
+	
+	visibility:visible;
+	top:100%;
+	opacity:block;
+}
+
+.menu ul ul li a{
+	display:block;
+}
