@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JavaScript Array</h1>
+    <h2>Looping an Array</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["banana", "apple", "orange", "Mango"];
+        let flen = fruits.length;
+
+        let text="<ul>";
+        for(let i=0; i<flen; i++){
+            text = text + "<li>" + fruits[i] + "</li>";       
+        }
+        text = text + "</ul>";
+        document.getElementById("demo").innerHTML= text;
+    </script>
+
+    <h2>Used push method</h2>
+    <button onclick="myfunc()">click here</button>
+    <p id="demo1"></p>
+
+   <script>
+    const frts = ["Banana", "Orange", "Apple"];
+    document.getElementById("demo1").innerHTML=frts;
+
+    function myfunc(){
+        frts.push("Lemon");
+        document.getElementById("demo1").innerHTML=frts;
+    }
+   </script>
+
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+
+<p id="demo2"></p>
+<script>
+    const cars = ["Toyota", "Tata", "Ford"];
+    cars[6]="Ferari";
+
+    let fLen = cars.length;
+    let text2 = "";
+
+    for(let i =0; i<fLen; i++)
+    text2 = text2+ cars[i] + "<br>";
+
+document.getElementById("demo2").innerHTML = text2;
+</script>
+
+
+<h2>Nasted JavaScript Object and array</h2>
+
+<p id="smp"></p>
+
+<script>
+    let x = "";
+    const myObj ={
+        name: "John",
+        age:30,
+        cars:[
+            {name:"toyota", model:["corolla", "alion", "janina"]},
+            {name:"BMW", model:["320", "x1", "x2"]},
+            {name:"fiat", model:["500", "panda"]}
+        ]
+    }
+
+    for(let i in myObj.cars){
+        x = x+ "<h2>" + myObj.cars[i].name +"</h2>";
+        for(let j in myObj.cars[i].model){
+            x = x+ myObj.cars[i].model[j];
+        }
+    }
+</script>
+
+</body>
+</html>

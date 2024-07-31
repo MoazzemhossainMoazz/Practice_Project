@@ -64,6 +64,50 @@
         document.getElementById("demo6").innerHTML= (a1==a2);
         document.getElementById("demo7").innerHTML=(a1===a2);
     </script>
-    <p></p>
+
+<hr>
+<br>
+
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+<p id="ex1"></p>
+<p id="ex2"></p>
+<p id="ex3"></p>
+<p id="ex4"></p>
+<p id="ex5"></p>
+<p id="ex6"></p>
+<p id="ex7"></p>
+<p id="ex8"></p>
+<p id="ex9"></p>
+<p id="ex10"></p>
+<p id="ex11"></p>
+
+
+<script>
+    let str="This is a string";
+    document.getElementById("ex1").innerHTML="ex1 = " + str.indexOf("is");
+
+    document.getElementById("ex2").innerHTML="ex2 = " + str.lastIndexOf("is");
+
+    document.getElementById("ex3").innerHTML="ex3 = " + str.indexOf("boy");
+
+    document.getElementById("ex4").innerHTML="ex4 = " + str.indexOf("is",4);
+
+    document.getElementById("ex5").innerHTML="ex5 = " + str.lastIndexOf("is",4);
+
+    document.getElementById("ex6").innerHTML="ex5 = " + str.search("is");
+
+    document.getElementById("ex7").innerHTML="ex7 = " + text.match(/is/);
+
+    document.getElementById("ex8").innerHTML="ex8 = " + text.includes("world");
+
+    document.getElementById("ex9").innerHTML="ex9 = " + text.includes("is");
+
+    document.getElementById("ex10").innerHTML="ex10 = " + text.includes("is", 2);
+
+    document.getElementById("ex11").innerHTML="ex11 = " + text.startsWith("This");
+</script>
+
+
 </body>
 </html>
